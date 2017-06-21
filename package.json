@@ -1,0 +1,37 @@
+{
+  "name": "auth0",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "auth0-lock": "^10.17.0",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1",
+    "jwt-decode": "^2.2.0",
+    "normalize.css": "^7.0.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.5",
+    "react-router-dom": "^4.1.1",
+    "redux": "^3.7.0"
+  },
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "grunt": "^1.0.1",
+    "grunt-contrib-less": "^1.4.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "less-plugin-autoprefix": "^1.5.1",
+    "less-plugin-clean-css": "^1.5.1",
+    "npm-run-all": "^4.0.2",
+    "react-bootstrap": "^0.31.0",
+    "react-scripts": "1.0.7"
+  },
+  "scripts": {
+    "start-js": "react-scripts start",
+    "build": "npm run compile-less && react-scripts-build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "compile-less": "grunt compile-less",
+    "watch-less": "grunt watch",
+    "start": "npm-run-all -p watch-less start-js"
+  }
+}

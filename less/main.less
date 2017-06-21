@@ -1,0 +1,200 @@
+// less/main.less
+
+// Import Bootstrap Styles Here
+
+@import "bootstrap/bootstrap.less";
+
+// Import your own LESS files here
+
+// Add your own styles here
+
+html {  
+    height: 100%;
+}
+body {  
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/*Start of header styling*/
+header{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 60px;;
+    background-color: rgba(48,0,0, 0.15);
+}
+
+/*Hamburger Menu*/
+.left-side .menu-button{
+    margin:-5px;
+    height:60px;
+}
+
+.menu-item{
+    list-style-type: none;
+    margin-top:15px;
+    width:200px;
+    height:200px;
+    color:white;
+}
+
+.menu-item .well{
+    margin-left:29px;
+    background-color: rgba(48,0,0, 0.15);
+    border-color:  rgba(48,0,0, 0.15);
+}
+
+.hamburger1
+ {
+    background: inherit;
+    width: 80px;
+    padding: 12px;
+    float: left;
+    margin: 0px 30px;
+    cursor: pointer;
+    border:none;
+    position:absolute;
+}
+
+.hamburger1 div {
+    height: 5px;
+    background: #fff;
+    width: 45px;
+    margin: 5px 0px;
+    transition: all 0.5s;
+}
+
+.hamburger1 div {
+    height: 5px;
+    background: #fff;
+    width: 45px;
+    margin: 5px 0px;
+    transition: all 0.5s;
+}
+
+.hamburger1:hover div:nth-child(1) {
+  width: 20px;
+  transition: all 0.5s;
+}
+
+.hamburger1:hover div:nth-child(2) {
+  width: 35px;
+  transition: all 0.5s;
+}
+
+.hamburger1:hover div:nth-child(3) {
+  width: 45px;
+  transition: all 0.5s;
+}
+
+.hamburger1:hover div:nth-child(4) {
+  width: 55px;
+  transition: all 0.5s;
+}
+
+.glyphicon{
+    margin:auto 8px;
+}
+
+.btn{
+    min-width:80px;
+}
+
+.left-side{
+    height: inherit;
+    max-width: 25%;
+    float:left;
+}
+
+.right-side{
+        height: inherit;
+        border:none;
+        display: flex;
+        float:right;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+    }
+
+@media only screen and (min-width:1287px){
+    .right-side{
+        width: 10%;
+    }
+}
+
+@media only screen and (max-width:1287px){
+    .right-side{
+        width: 15%;
+    }
+}
+
+@media only screen and (max-width:1024px){
+    .right-side{
+        width: 20%;
+    }
+}
+/*End of header styling*/
+
+/*Start of Page 1*/
+.main-image{
+    width: 100vw;
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100vh;
+    background-image: url('../Images/form_green_shadow_dark_85047_1920x1080.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.mainbody-div{
+    position:relative;
+    z-index:1;
+    height:100vh; 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+}
+
+.banner-btn{
+    margin-top:300px;
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    background: transparent;
+    border: 1px solid #fff;
+}
+
+.banner-btn:hover{
+    background: #474545;
+    border:1px solid #474545;
+    transition: background .5s cubic-bezier(0.39, 0.58, 0.57, 1),border .5s ease-in;
+    transition-property: background, border;
+    transition-duration: 0.5s, 0.5s;
+    transition-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1), ease-in;
+    transition-delay: initial, initial;
+}
+
+.banner-btn span{
+    width:180px;
+    height:38px;
+    font-size: 11px;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 0 30px;
+    background: transparent;
+    color: #fff;
+    font-family: Open Sans;
+    line-height: 350%;
+    text-align: center;
+}
+/*End of Page1 */
