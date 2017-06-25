@@ -5,6 +5,7 @@
   "dependencies": {
     "auth0-lock": "^10.17.0",
     "bootstrap": "^3.3.7",
+    "express": "^4.15.3",
     "jquery": "^3.2.1",
     "jwt-decode": "^2.2.0",
     "normalize.css": "^7.0.0",
@@ -22,6 +23,7 @@
     "less-plugin-autoprefix": "^1.5.1",
     "less-plugin-clean-css": "^1.5.1",
     "npm-run-all": "^4.0.2",
+    "prop-types": "^15.5.10",
     "react-bootstrap": "^0.31.0",
     "react-scripts": "1.0.7"
   },

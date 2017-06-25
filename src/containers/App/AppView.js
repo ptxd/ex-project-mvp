@@ -1,12 +1,13 @@
-import React from 'react'
+import React, {Component} from 'react';
 // import PropTypes from 'prop-types'
-import { Switch, Route } from 'react-router-dom'
+import { Switch, Route } from 'react-router-dom';
+import HeaderContainer from '../Header/HeaderContainer';
+import HomePage from '../../components/HomePage';
+import AboutPage from '../../components/AboutPage';
+import NotFoundPage from '../../components/NotFoundPage';
+import AuthService from '../../utils/AuthService';
 
-import HeaderContainer from '../Header/HeaderContainer'
-import HomePage from '../../components/HomePage'
-import AuthService from '../../utils/AuthService'
-
-class App extends React.Component {
+class App extends Component {
 
   authService = new AuthService()
  
@@ -18,7 +19,7 @@ this.authService.lock.on('authenticated', (authResult) => {
        AuthService.setToken(authResult.idToken) // static method
         AuthService.setProfile(profile) // static method
         this.props.loginSuccess(profile)
-        return this.props.history.push({ pathname: '/dashboard' });
+        return this.props.history.push({ pathname: '/about' });
     }
     else {
         return this.props.loginError(error);
@@ -38,6 +39,8 @@ this.authService.lock.on('authenticated', (authResult) => {
         <HeaderContainer authService={this.authService} />
         <Switch>
           <Route exact path="/" component={HomePage}/>
+          <Route path="/about" component={AboutPage}/>
+          <Route path="/notfound" component={NotFoundPage}/>
         </Switch>
       </div>
     )
@@ -45,9 +48,5 @@ this.authService.lock.on('authenticated', (authResult) => {
 }
 
 export default App;
-
-//  <Route path="/about" component={AboutPage}/>
-          //  <Route component={NotFoundPage}/>
-
 
 
