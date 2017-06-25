@@ -4,7 +4,6 @@ import { Switch, Route } from 'react-router-dom';
 import HeaderContainer from '../Header/HeaderContainer';
 import HomePage from '../../components/HomePage';
 import AboutPage from '../../components/AboutPage';
-import NotFoundPage from '../../components/NotFoundPage';
 import AuthService from '../../utils/AuthService';
 
 class App extends Component {
@@ -40,7 +39,7 @@ this.authService.lock.on('authenticated', (authResult) => {
         <Switch>
           <Route exact path="/" component={HomePage}/>
           <Route path="/about" component={AboutPage}/>
-          <Route path="/notfound" component={NotFoundPage}/>
+          <Route path='/table'/>
         </Switch>
       </div>
     )

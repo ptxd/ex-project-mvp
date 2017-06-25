@@ -8,6 +8,7 @@
 
 #secrets
 src/utils/config.js
+server/server.config.js
 
 # production
 /build
