@@ -15,7 +15,6 @@ class App extends React.Component {
 this.authService.lock.on('authenticated', (authResult) => {
       this.authService.lock.getProfile(authResult.idToken, (error, profile) => {
     if (!error) {
-      console.log(AuthService);
        AuthService.setToken(authResult.idToken) // static method
         AuthService.setProfile(profile) // static method
         this.props.loginSuccess(profile)

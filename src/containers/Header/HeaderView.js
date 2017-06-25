@@ -29,7 +29,7 @@ const Header = ({ authService, history, isAuthenticated, profile, error, loginRe
           <div className="right-side">
             { !isAuthenticated ? (
                 <button onClick={() => {authService.login();loginRequest()}} className="btn btn-success glyphicon glyphicon-log-in"> 
-                  Login 
+                  <span>Login</span> 
                 </button>
                 ) : (
                 <div>

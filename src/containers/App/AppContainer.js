@@ -5,7 +5,6 @@ import { withRouter } from 'react-router'
 import AppView from './AppView'
 
 const mapDispatchToProps = (dispatch) => {
-  console.log(dispatch);
   return {
     loginSuccess: (profile) => dispatch(loginSuccess(profile)),
     loginError: (error) => dispatch(loginError(error))
