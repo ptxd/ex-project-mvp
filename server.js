@@ -18,8 +18,15 @@ const port = process.env.PORT || 3000;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
+
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
 // Log requests to the console.
-app.use(logger(':remote-addr - :remote-user [:date[clf]] ":method :url HTTP/:http-version" :status :res[content-length] :response-time ms'));
+// app.use(logger(':remote-addr - :remote-user [:date[clf]] ":method :url HTTP/:http-version" :status :res[content-length] :response-time ms'));
 
 //serves the build directory
 app.use(express.static(path.join(__dirname, 'build')));
@@ -45,5 +52,6 @@ app.get('/*', function (req, res) {
 
 //testpoint
 app.get ('/table', controller.getAll);
+app.post('/user', controller.postUser);
 
 app.listen(port,() => console.log(`Listening on port ${port}...`));

@@ -1,5 +1,5 @@
-import * as ActionTypes from '../actions'
-import AuthService from '../utils/AuthService'
+import * as ActionTypes from '../actions';
+import AuthService from '../utils/AuthService';
 
 export default function authReducer(state = {
   isAuthenticated: !AuthService.isTokenExpired(),

@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 import { Switch, Route } from 'react-router-dom';
 import HeaderContainer from '../Header/HeaderContainer';
 import HomePage from '../../components/HomePage';
-import AboutPage from '../../components/AboutPage';
+// import AboutPage from '../../components/AboutPage';
 import AuthService from '../../utils/AuthService';
 
 class App extends Component {
@@ -18,7 +18,7 @@ this.authService.lock.on('authenticated', (authResult) => {
        AuthService.setToken(authResult.idToken) // static method
         AuthService.setProfile(profile) // static method
         this.props.loginSuccess(profile)
-        return this.props.history.push({ pathname: '/about' });
+        return this.props.history.push({ pathname: `/user:${profile.clientID}`});
     }
     else {
         return this.props.loginError(error);
@@ -38,8 +38,6 @@ this.authService.lock.on('authenticated', (authResult) => {
         <HeaderContainer authService={this.authService} />
         <Switch>
           <Route exact path="/" component={HomePage}/>
-          <Route path="/about" component={AboutPage}/>
-          <Route path='/table'/>
         </Switch>
       </div>
     )
@@ -48,4 +46,5 @@ this.authService.lock.on('authenticated', (authResult) => {
 
 export default App;
 
+ // <Route path="/about" component={AboutPage}/>
 
