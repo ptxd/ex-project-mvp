@@ -25,6 +25,7 @@
   },
   "devDependencies": {
     "bootstrap": "^3.3.7",
+    "d3": "^4.9.1",
     "grunt": "^1.0.1",
     "grunt-contrib-less": "^1.4.1",
     "grunt-contrib-watch": "^1.0.0",
@@ -33,7 +34,8 @@
     "npm-run-all": "^4.0.2",
     "prop-types": "^15.5.10",
     "react-bootstrap": "^0.31.0",
-    "react-scripts": "1.0.7"
+    "react-scripts": "1.0.7",
+    "recharts": "^1.0.0-alpha.1"
   },
   "scripts": {
     "start-js": "react-scripts start",
