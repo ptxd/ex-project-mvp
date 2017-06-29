@@ -52,6 +52,6 @@ app.get('/*', function (req, res) {
 
 //testpoint
 app.get ('/table', controller.getAll);
-app.post('/user', controller.postUser);
+app.post('/dashboard', controller.postUser);
 
 app.listen(port,() => console.log(`Listening on port ${port}...`));

@@ -1,0 +1,2 @@
+Date,Price,Open,High,Low,Change%,Bit
+DateTime,int,int,int,int,int,

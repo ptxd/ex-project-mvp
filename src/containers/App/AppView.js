@@ -15,15 +15,15 @@ class App extends Component {
     this.authService.lock.on('authenticated', (authResult) => {
       this.authService.lock.getProfile(authResult.idToken, (error, profile) => {
         if (!error) {
-          AuthService.setToken(authResult.idToken) // static method
-            AuthService.setProfile(profile) // static method
-            this.props.loginSuccess(profile)
-            return this.props.history.push({ pathname: '/dashboard'});
+              AuthService.setToken(authResult.idToken) // static method
+              AuthService.setProfile(profile) // static method
+              this.props.loginSuccess(profile)
+              return this.props.history.push({ pathname: '/dashboard'});
         }
         else {
-            return this.props.loginError(error);
-            }
-        });
+              return this.props.loginError(error);
+        }
+      });
     });
 
     // Add callback for lock's `authorization_error` event
