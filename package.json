@@ -31,16 +31,18 @@
     "grunt-contrib-watch": "^1.0.0",
     "less-plugin-autoprefix": "^1.5.1",
     "less-plugin-clean-css": "^1.5.1",
+    "lodash": "^4.17.4",
     "npm-run-all": "^4.0.2",
     "prop-types": "^15.5.10",
     "react-bootstrap": "^0.31.0",
     "react-scripts": "1.0.7",
-    "recharts": "^1.0.0-alpha.1"
+    "recharts": "^1.0.0-alpha.1",
+    "redux-promise": "^0.5.3"
   },
   "scripts": {
     "start-js": "react-scripts start",
     "build": "react-scripts build",
-    "building-less": "npm run compile-less",
+    "build-less": "npm run compile-less",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "compile-less": "grunt compile-less",

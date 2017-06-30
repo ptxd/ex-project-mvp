@@ -1,20 +1,15 @@
 import React, {Component} from 'react';
 import MultipleAreaCharts from '../containers/DashChart/DashChart';
-import SearchBar from '../containers/SearchBar/SearchBarView';
+import SearchBarContainer from '../containers/SearchBar/SearchBarContainer';
+import ProductTrackerContainer from '../containers/ProductTracker/ProductTrackerContainer';
 
 class Dashboard extends Component {
   render() {
     return (
-      <div>
-        <div className="index-chart">
-          <MultipleAreaCharts></MultipleAreaCharts>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <SearchBar />
-        </div>
+      <div className="dashboard">
+          <MultipleAreaCharts />
+          <SearchBarContainer />
+          <ProductTrackerContainer />
       </div>
     );
   }

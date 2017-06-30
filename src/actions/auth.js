@@ -6,7 +6,7 @@ export const LOGIN_SUCCESS = 'LOGIN_SUCCESS'
 export const LOGIN_ERROR = 'LOGIN_ERROR'
 export const LOGOUT_SUCCESS = 'LOGOUT_SUCCESS'
 
-// const ROOT_URL = 'http://localhost:3000';
+const ROOT_URL = 'http://localhost:5000';
 
 export function loginRequest() {
   return {
@@ -15,9 +15,7 @@ export function loginRequest() {
 }
 
 export function loginSuccess(profile) {
-  console.log(profile);
-  const userProfile = axios.post('http://localhost:3000/user',querystring.stringify(profile));
-  console.log(userProfile);
+  const userProfile = axios.post({ROOT_URL},querystring.stringify(profile));
   return {
     type: LOGIN_SUCCESS,
     profile

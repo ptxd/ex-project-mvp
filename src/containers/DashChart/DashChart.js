@@ -15,7 +15,7 @@ const data = [
 class MultipleAreaCharts extends Component{
 	render () {
   	return (
-      <div>
+      <div className="area-chart">
         <AreaChart width={1500} height={500} data={data} margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
           <defs>
             <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">

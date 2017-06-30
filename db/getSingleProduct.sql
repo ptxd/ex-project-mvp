@@ -1,0 +1,1 @@
+select * from products_tester where product_name = $1;

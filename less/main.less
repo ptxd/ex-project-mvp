@@ -1,5 +1,6 @@
 // less/main.less
 
+@import "reset/reset.less";
 // Import Bootstrap Styles Here
 
 @import "bootstrap/bootstrap.less";
@@ -150,8 +151,6 @@ header{
     // background-image: url('../Images/form_green_shadow_dark_85047_1920x1080.jpg');
     // background-size: cover;
     // background-repeat: no-repeat;
-    width: 100wh;
-	height: 100vh;
 	color: #fff;
 	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
 	background-size: 400% 400%;
@@ -258,14 +257,31 @@ h6 {
 
 /*Dashboard Page*/
 
-.index-chart{
-    margin: 0px auto;
-    background-color:#fff;
+.dashboard{
     width:100%;
-    height: 100vh;
+    height:100em;
+    background: #a1c4fd; /* Old Browsers */
+    background: -webkit-linear-gradient(top,#a1c4fd,#c2e9fb); /*Safari 5.1-6*/
+    background: -o-linear-gradient(top,#a1c4fd,#c2e9fb); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(top,#a1c4fd,#c2e9fb); /*Fx 3.6-15*/
+    background: linear-gradient(to bottom, #a1c4fd, #c2e9fb); /*Standard*/
+}
+.dashboard .area-chart{
+    margin: 0px 0px 0 40px;
+    background-color:rgba(48,0,0, 0.5);
+    width:1500px;
+    height: 500px;
+    z-index: 1;
 }
 
 .recharts-surface{
-    margin:80px 0px 0 100px;
-    
+    margin:80px 0px 0 100px; 
+}
+
+.dashboard .search-container{
+    margin-top:80px;
+    width:100%;    
+}
+.dashboard .input-container{
+    width:100%;    
 }

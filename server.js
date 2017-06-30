@@ -12,7 +12,7 @@ const controller = require('./server/controller');
 const app = express();
 
 //this is the server's port number
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5000;
 
 // Parse incoming requests data
 app.use(bodyParser.json());
@@ -44,14 +44,19 @@ massive({
 
 //---End points to serve the front end--- 
 //very important!!! for production add app.get('/*',()=>{}); the star is important 
-app.get('/*', function (req, res) {
-   res.sendFile(path.join(__dirname, 'build', 'index.html'));
- });
+
+// app.get('/*', function (req, res) {
+//    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+//  });
 
 //---End points to serve the back end--- 
 
 //testpoint
 app.get ('/table', controller.getAll);
+app.get('/dashboard',controller.getProduct);
+app.get('/product',controller.getSingleProduct);
+
 app.post('/dashboard', controller.postUser);
+
 
 app.listen(port,() => console.log(`Listening on port ${port}...`));

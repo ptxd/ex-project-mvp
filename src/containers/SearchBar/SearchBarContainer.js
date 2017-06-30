@@ -1,6 +1,6 @@
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import {fetchProductData} from '../../actions/index';
+import {fetchProductData} from '../../actions/searchbar';
 import SearchBar from './SearchBarView';
 
 function mapDispatchToProps(dispatch){

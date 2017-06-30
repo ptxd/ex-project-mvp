@@ -20,8 +20,23 @@ exports.postUser = function(req,res,next){
         req.body.created_at
         ];  
     req.app.get('db').postUser(user_data).then(function(response){
-        console.log(user_data);
         res.status(200).send(response);
+    });
+}
+
+exports.getProduct = function (req,res){
+    var product_query = [req.query.q];
+    req.app.get('db').getProduct(product_query).then(function(response){
+        res.status(200).send(response);
+    });
+}
+
+exports.getSingleProduct = function (req,res){
+    var singleProduct = [req.query.q];
+    console.log(singleProduct);
+    req.app.get('db').getSingleProduct(singleProduct).then(function(response){
+        res.status(200).send(response);
+        console.log(response);
     });
 }
 

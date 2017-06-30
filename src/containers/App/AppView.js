@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
 // import PropTypes from 'prop-types'
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route} from 'react-router-dom';
 import HeaderContainer from '../Header/HeaderContainer';
 import HomePage from '../../components/HomePage';
 import AuthService from '../../utils/AuthService';
 import Dashboard from '../../components/DashboardPage';
+import ProductDetail from '../../components/ProductPage'
 
 class App extends Component {
 
@@ -40,6 +41,7 @@ class App extends Component {
         <Switch>
           <Route exact path="/" component={HomePage}/>
           <Route path="/dashboard" component={Dashboard} />
+          <Route path="/product" component={ProductDetail} />
         </Switch>
       </div>
     )
