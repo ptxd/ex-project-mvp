@@ -1,6 +1,7 @@
 import React from 'react';
 // import { Link } from 'react-router-dom'
 import AuthService from '../../utils/AuthService';
+import {Link} from 'react-router-dom';
 
 const Header = ({ authService, history, isAuthenticated, profile, error, loginRequest, logoutSuccess }) =>
     <div> 
@@ -16,13 +17,16 @@ const Header = ({ authService, history, isAuthenticated, profile, error, loginRe
               </div>
               <div className="collapse menu-item" id="collapseExample">
                   <li className="well">
-                      How It Works
+                      <Link to='/' className="well-text">Home</Link>
+                  </li>   
+                  <li className="well">
+                      <Link to='/about' className="well-text">How It Works</Link>
                   </li>
                   <li className="well">
-                      Discover
+                     <Link to='/about' className="well-text">Discover</Link>
                   </li>
                   <li className="well">
-                      Contact Us
+                      <Link to='/about' className="well-text">Contact Us</Link>
                   </li>   
               </div>
           </div>

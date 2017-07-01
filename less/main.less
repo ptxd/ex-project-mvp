@@ -44,8 +44,15 @@ header{
 
 .menu-item .well{
     margin-left:29px;
+	border: none;
     background-color: rgba(48,0,0, 0.15);
+	width:130px;
+	// height:50px;
     border-color:  rgba(48,0,0, 0.15);
+}
+
+.menu-item .well .well-text{
+	color:white;
 }
 
 .hamburger1
@@ -290,3 +297,246 @@ h6 {
 .dashboard .input-container{
     width:100%;    
 }
+
+/*start of about page*/
+@font-face {
+	font-family: 'OpenSans';
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+.clearfix:after, #contents:after {
+	clear:both;
+	content:"";
+	display:block;
+	height:1%;
+	line-height:0;
+	visibility:hidden;
+}
+
+/*------------------------------ HEADER ------------------------------*/
+.about-page about-header {
+	background-color: #eee;
+	border-bottom: 1px solid #e6e6e6;
+	padding: 27px 0;
+}
+.about-page about-header > div, #footer > div {
+	width: 920px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+/*------------------------------ CONTENTS ------------------------------*/
+#contents {
+	min-height: 510px;
+	width: 880px;
+	margin: 0 auto;
+	padding: 54px 40px;
+}
+h1 {
+	color: #3e3e3e;
+	font-size: 30px;
+	font-weight: normal;
+	line-height: 30px;
+	margin: 0 0 30px;
+}
+h2 {
+	color: #2c2c2c;
+	font-size: 24px;
+	font-weight: normal;
+	line-height: 24px;
+	margin: 0 0 12px;
+}
+p {
+	color: #585858;
+	font-size: 16px;
+	line-height: 24px;
+	margin: 0 0 30px;
+}
+p a {
+	color: #585858;
+}
+#tagline h1 {
+	margin-left: 20px;
+}
+#tagline > div {
+	float: left;
+	width: 400px;
+	margin: 0 20px;
+}
+#contents .features {
+	width: 810px;
+	margin: 0 auto;
+}
+.features > div {
+	display: inline-block;
+	margin: 0 0 30px;
+}
+.features > div img {
+	float: left;
+	margin-right: 20px;
+	margin-top: 36px;
+}
+.date {
+	float: left;
+	height: 78px;
+	width: 70px;
+	margin-right: 20px;
+	border: 1px solid #d5d5d5;
+	text-align: center;
+}
+.date p {
+	margin: 12px 0 0;
+}
+.date p span {
+	display: block;
+	font-size: 30px;
+	margin-bottom: 6px;
+}
+.author {
+	color: #585858;
+	display: block;
+	font-size: 12px;
+}
+.more {
+	background-color: #727272;
+	color: #fff;
+	display: inline-block;
+	font-size: 14px;
+	line-height: 30px;
+	width: 100px;
+	text-align: center;
+	text-decoration: none;
+}
+.more:hover, .message input[type='submit']:hover {
+	background-color: #f99600;
+	color: #000;
+}
+/** main **/
+.main {
+	float: left;
+	background: url(../Images/divider.png) repeat-y right top;
+	min-height: 100px;
+	width: 620px;
+	padding-right: 24px;
+}
+.main h1, .sidebar h1 {
+	margin: 0 0 12px;
+	position: relative;
+	top: -18px;
+}
+.main h2 span {
+	display: block;
+	font-size: 12px;
+}
+/** sidebar **/
+.sidebar {
+	float: left;
+	min-height: 848px;
+	width: 216px;
+	margin-left: 20px;
+}
+.sidebar ul, .news {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.news li {
+	border-top: 1px solid #d5d5d5;
+	padding: 24px 30px 0 100px;
+	position: relative;
+}
+.news li .date {
+	float: none;
+	position: absolute;
+	left: 0;
+	top: 30px;
+}
+.news li > p span, .post > span {
+	display: block;
+	text-align: right;
+}
+.posts {
+	border-top: 1px solid #d5d5d5;
+}
+.posts li {
+	border-bottom: 1px solid #d5d5d5;
+	padding: 24px 10px 0;
+}
+.posts li p {
+	font-size: 14px;
+}
+.posts li .title {
+	font-size: 16px;
+	font-weight: normal;
+	margin: 0 0 12px;
+}
+.posts li .title a {
+	color: #2c2c2c;
+	font-size: 16px;
+	text-decoration: none;
+}
+.post {
+	width: 785px;
+	margin: 0 auto;
+}
+.post h1 {
+	padding-top: 12px;
+}
+.about {
+	width: 740px;
+	margin: 0 auto;
+	padding-top: 100px;
+}
+.about h1, .section h1 {
+	border-bottom: 1px solid #e0e0e0;
+	padding-bottom: 12px;
+}
+.section {
+	float: left;
+	width: 390px;
+	margin-right: 50px;
+}
+.section h1 {
+	margin-bottom: 18px;
+}
+.message input[type='text'], .message textarea {
+	color: #aeaeae;
+	font-size: 13px;
+	height: 33px;
+	line-height: 33px;
+	width: 380px;
+	border: 1px solid #d5d5d5;
+	margin: 0 0 6px;
+	padding: 0 4px;
+}
+.message textarea {
+	height: 175px;
+	overflow: auto;
+	resize: none;
+}
+.message input[type='submit'] {
+	float: right;
+	background-color: #818181;
+	color: #d5d5d5;
+	cursor: pointer;
+	font: 13px/30px Arial, Helvetica, sans-serif;
+	height: 30px;
+	border: 0;
+	margin: 0;
+	padding: 0 10px;
+}
+.contact {
+	background-color: #f8f8f8;
+	width: 270px;
+	padding: 124px 60px;
+	text-align: center;
+}
+.contact p span {
+	color: #2c2c2c;
+	display: block;
+	font-size: 30px;
+	line-height: 36px;
+	padding: 18px 0;
+}
+/*End of about page*/

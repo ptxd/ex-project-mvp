@@ -6,6 +6,7 @@ import HomePage from '../../components/HomePage';
 import AuthService from '../../utils/AuthService';
 import Dashboard from '../../components/DashboardPage';
 import ProductDetail from '../../components/ProductPage'
+import AboutPage from '../../components/AboutPage';
 
 class App extends Component {
 
@@ -40,6 +41,7 @@ class App extends Component {
         <HeaderContainer authService={this.authService} />
         <Switch>
           <Route exact path="/" component={HomePage}/>
+          <Route path="/about" component={AboutPage} />
           <Route path="/dashboard" component={Dashboard} />
           <Route path="/product" component={ProductDetail} />
         </Switch>
@@ -49,7 +51,5 @@ class App extends Component {
 }
 
 export default App;
-
-
 
 //user:${profile.clientID}
