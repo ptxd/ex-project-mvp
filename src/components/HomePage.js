@@ -1,5 +1,6 @@
 
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 import video from '../video/background.mp4'
 
 class HomePage extends Component {
@@ -11,9 +12,11 @@ class HomePage extends Component {
                     <source src={video} type='video/mp4'/>
                 </video>
                 <div className="mainbody-div">
-                    <button className="banner-btn">
-                        <span>Learn More</span>
-                    </button>
+                    <Link to='/about'>
+                        <button className="banner-btn">
+                            <span>Learn More</span>
+                        </button>
+                    </Link>
                 </div>   
             </div>
         );

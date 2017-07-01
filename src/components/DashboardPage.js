@@ -7,9 +7,28 @@ class Dashboard extends Component {
   render() {
     return (
       <div className="dashboard">
-          <MultipleAreaCharts />
-          <SearchBarContainer />
-          <ProductTrackerContainer />
+        <div className="area-chart">
+          <div className="recharts-left">
+            <MultipleAreaCharts />
+          </div>
+           <span>
+          <div className="recharts-right">    
+             <MultipleAreaCharts />
+          </div>  
+          </span>           
+        </div> 
+        <div className="dash-trend-container">
+          Insert component here
+          asadasada<br/>
+          asdadsadas
+          adsadasd
+        </div>
+        <div className="dash-search">       
+            <SearchBarContainer />
+        </div>
+        <div className="dash-table">
+            <ProductTrackerContainer />
+        </div>    
       </div>
     );
   }

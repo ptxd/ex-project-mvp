@@ -8,6 +8,7 @@
 // Import your own LESS files here
 
 // Add your own styles here
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
 html {  
     height: 100%;
@@ -272,32 +273,125 @@ h6 {
 .dashboard{
     width:100%;
     height:100em;
-    background: #a1c4fd; /* Old Browsers */
-    background: -webkit-linear-gradient(top,#a1c4fd,#c2e9fb); /*Safari 5.1-6*/
-    background: -o-linear-gradient(top,#a1c4fd,#c2e9fb); /*Opera 11.1-12*/
-    background: -moz-linear-gradient(top,#a1c4fd,#c2e9fb); /*Fx 3.6-15*/
-    background: linear-gradient(to bottom, #a1c4fd, #c2e9fb); /*Standard*/
-}
-.dashboard .area-chart{
-    margin: 0px 0px 0 40px;
-    background-color:rgba(48,0,0, 0.5);
-    width:1500px;
-    height: 500px;
-    z-index: 1;
+	// background-color:#252830;
+    // background: #a1c4fd; /* Old Browsers */
+    // background: -webkit-linear-gradient(top,#a1c4fd,#c2e9fb); /*Safari 5.1-6*/
+    // background: -o-linear-gradient(top,#a1c4fd,#c2e9fb); /*Opera 11.1-12*/
+    // background: -moz-linear-gradient(top,#a1c4fd,#c2e9fb); /*Fx 3.6-15*/
+    // background: linear-gradient(to bottom, #a1c4fd, #c2e9fb); /*Standard*/
+	background-image:url('../Images/black-background_00313351.jpg');
 }
 
-.recharts-surface{
-    margin:80px 0px 0 100px; 
+.area-chart{
+	width:100%;
+	height:40%;
+	padding-top:100px;
+	padding-left:80px;
+	padding-right:80px;
+}
+.recharts-left{
+	width:750px;
+	height:400px;
+	background: repeating-linear-gradient(
+		45deg,
+		rgba(37, 40, 48, 0.3),
+		rgba(60, 59, 58, 0.5) 0.5px,
+		rgba(60, 59, 58, 0.5) 0.5px,
+		rgba(60, 59, 58, 0.5) 0.5px
+		);
+	// background-color:#1997c6; 	
+	float:left;
+}
+.recharts-right{
+	width:750px;
+	height:400px;
+	background: repeating-linear-gradient(
+	45deg,
+	rgba(37, 40, 48, 0.3),
+	rgba(60, 59, 58, 0.5) 0.5px,
+	rgba(60, 59, 58, 0.5) 0.5px,
+	rgba(60, 59, 58, 0.5) 0.5px
+	);
+	float:right;
+}
+.recharts-wrapper{
+	width:50%;
+	margin-top:50px;
+	z-index:5;
 }
 
 .dashboard .search-container{
-    margin-top:80px;
     width:100%;    
 }
-.dashboard .input-container{
+.dashboard .input-group{
     width:100%;    
 }
 
+.dashboard .input-group .form-control{
+	width:30%;
+	margin-right:-2px;
+}
+
+.form-control{
+	background-color: rgba(255,255,255, 0.15);
+}
+
+.form-control:focus{
+	z-index:10;
+	color:whitesmoke;
+}
+
+.btn-info{
+	margin-top:0px;
+	height:34px !important;
+	background:transparent !important;
+}
+
+.btn-info:hover{
+	background-color:#57c5e0 !important;
+}
+
+.dash-trend-container{
+	float:left;
+	height:750px;
+	width:750px;
+	// background: repeating-linear-gradient(
+	// 45deg,
+	// #252830,
+	// rgba(60, 59, 58, 1) 0.5px,
+	// rgba(60, 59, 58, 1) 0.5px,
+	// rgba(60, 59, 58, 1) 0.5px
+	// );
+	background-color: rgba(255,255,255, 0.15);
+	margin-left:80px;
+}
+
+.dash-search{
+	width:80%;
+	margin-left:58%;
+}
+
+.dash-table{
+	margin-top:20px;
+	width:750px;
+	margin-left:52%;
+	background-color: rgba(255,255,255, 0.15);
+}
+
+thead>tr>th{
+	color:white;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	text-align: center;
+}
+
+tbody>tr>td{
+	color:white;
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+}
+
+/*End of Dashboard Page*/
 /*start of about page*/
 @font-face {
 	font-family: 'OpenSans';

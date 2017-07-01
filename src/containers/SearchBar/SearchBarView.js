@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Button} from 'react-bootstrap';
 
 class SearchBar extends Component {
     constructor(props){
@@ -31,7 +32,7 @@ class SearchBar extends Component {
                             onChange={this.onInputChange}
                         />
                         <span className="input-group-button">
-                            <button type="submit" className="btn btn-secondary">Add</button>
+                            <button type="submit" className="btn btn-info">Add</button>
                         </span>
                     </form>
                 </div>

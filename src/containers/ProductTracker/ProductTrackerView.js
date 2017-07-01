@@ -2,7 +2,6 @@ import React, { Component} from 'react';
 import {Link} from 'react-router-dom';
 
 class ProductTracker extends Component {
-    
     constructor(props){
         super(props);
         this.handleClick = this.handleClick.bind(this);
@@ -39,7 +38,7 @@ class ProductTracker extends Component {
                 <table className="table table-hover">
                     <thead>
                         <tr>
-                            <th>Ticker</th>
+                            <th>Product</th>
                             <th>Type</th>
                             <th>Price</th>
                             <th>LinkTo</th>
