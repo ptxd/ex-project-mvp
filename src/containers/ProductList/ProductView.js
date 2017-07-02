@@ -12,22 +12,18 @@ class Product extends Component {
     const content = product.content;
 
     return(
-        <Col sm={6} md={3}>
-          <Panel header={title} key={title} bsStyle="info">
-              {content}
-          </Panel>
-        </Col>
+        <div className="product-list-container">
+            {title}
+            <br/>
+            {content}
+        </div>
         );
   }
 
   render() {
     return (
       <div className="product-container-div">
-        <Grid>
-          <Row className="show-grid">
               {this.props.product.map((e)=>e.map(this.productList))}
-          </Row>
-        </Grid>
       </div>
     );
   }

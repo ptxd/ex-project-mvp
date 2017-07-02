@@ -25,7 +25,7 @@ class AboutPage extends Component {
                 </div>
             </div>
                 <div className="footer">
-                    <div class="clearfix">
+                    <div className="clearfix">
                         <div className="connect">
                     </div>
                 </div>
