@@ -23,7 +23,7 @@ body {
 /*Start of header styling*/
 header{
     position: fixed;
-    z-index: 2;
+    z-index: 10;
     width: 100%;
     height: 60px;;
     background-color: rgba(48,0,0, 0.15);
@@ -635,3 +635,34 @@ p a {
 	padding: 18px 0;
 }
 /*End of about page*/
+
+/*Start of Product page*/
+.product-main{
+	background-image:url('../Images/black-background_00313351.jpg');
+	width:100%;
+	height:100vh;
+	z-index: 0;
+}
+
+.product-container{
+	width:100%;
+	height:1000px;
+	z-index:5;
+	position: relative;
+}
+
+.product-container-div {
+	z-index: 5;
+	height:inherit;
+}
+
+.product-container-div .container{
+	height:inherit;
+}
+
+.product-container-div .container .show-grid{
+	height:inherit;
+	padding-top: 80px;
+}
+
+/*End of Product page*/

@@ -22,7 +22,7 @@ class Product extends Component {
 
   render() {
     return (
-      <div>
+      <div className="product-container-div">
         <Grid>
           <Row className="show-grid">
               {this.props.product.map((e)=>e.map(this.productList))}
