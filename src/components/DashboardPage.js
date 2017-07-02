@@ -18,10 +18,11 @@ class Dashboard extends Component {
           </span>           
         </div> 
         <div className="dash-trend-container">
-          Insert component here
-          asadasada<br/>
-          asdadsadas
-          adsadasd
+          What They Do: <br/>
+          How They Do It:<br/>
+          Specialization: <br/>
+          Tech Stuff:
+          <br/>
         </div>
         <div className="dash-search">       
             <SearchBarContainer />
