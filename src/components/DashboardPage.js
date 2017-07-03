@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import MultipleAreaCharts from '../containers/DashChart/DashChart';
 import SearchBarContainer from '../containers/SearchBar/SearchBarContainer';
 import ProductTrackerContainer from '../containers/ProductTracker/ProductTrackerContainer';
+import TableList from './table';
 
 class Dashboard extends Component {
   render() {
@@ -18,11 +19,7 @@ class Dashboard extends Component {
           </span>           
         </div> 
         <div className="dash-trend-container">
-          What They Do: <br/>
-          How They Do It:<br/>
-          Specialization: <br/>
-          Tech Stuff:
-          <br/>
+          <TableList></TableList>
         </div>
         <div className="dash-search">       
             <SearchBarContainer />
