@@ -22,7 +22,8 @@
     "react-router-dom": "^4.1.1",
     "redux": "^3.7.0",
     "redux-persist": "^4.8.2",
-    "redux-thunk": "^2.2.0"
+    "redux-thunk": "^2.2.0",
+    "serve": "^6.0.1"
   },
   "devDependencies": {
     "bootstrap": "^3.3.7",
@@ -49,7 +50,7 @@
     "compile-less": "grunt compile-less",
     "watch-less": "grunt watch",
     "start-dev": "npm-run-all -p watch-less start-js",
-    "start":"node server.js",
-    "main":"server.js"
+    "start": "node server.js",
+    "main": "server.js"
   }
 }
