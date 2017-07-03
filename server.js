@@ -15,7 +15,6 @@ const app = express();
 //this is the server's port number
 const port = process.env.PORT || 5000;
 
-
 // Parse incoming requests data
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
