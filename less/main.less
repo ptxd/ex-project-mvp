@@ -321,7 +321,9 @@ h6 {
 }
 
 .dashboard .search-container{
-    width:100%;    
+    width:100%; 
+	z-index: 20;   
+	position: relative;
 }
 .dashboard .input-group{
     width:100%;    
@@ -386,6 +388,16 @@ h6 {
 	width:750px;
 	margin-left:52%;
 	background-color: rgba(255,255,255, 0.15);
+}
+
+.dashboard .area-chart .recharts-left .recharts-wrapper .recharts-surface{
+	width:900px;
+	height:500px;
+}
+
+.dashboard .area-chart .recharts-right .recharts-wrapper .recharts-surface{
+	width:900px;
+	height:500px;
 }
 
 thead>tr>th{

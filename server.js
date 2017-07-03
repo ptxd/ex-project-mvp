@@ -14,6 +14,7 @@ const app = express();
 //this is the server's port number
 const port = process.env.PORT || 5000;
 
+
 // Parse incoming requests data
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -26,7 +27,7 @@ app.use(function(req, res, next) {
 });
 
 // Log requests to the console.
-// app.use(logger(':remote-addr - :remote-user [:date[clf]] ":method :url HTTP/:http-version" :status :res[content-length] :response-time ms'));
+app.use(logger(':remote-addr - :remote-user [:date[clf]] ":method :url HTTP/:http-version" :status :res[content-length] :response-time ms'));
 
 //serves the build directory
 app.use(express.static(path.join(__dirname, 'build')));

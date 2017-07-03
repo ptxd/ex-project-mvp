@@ -48,6 +48,8 @@
     "eject": "react-scripts eject",
     "compile-less": "grunt compile-less",
     "watch-less": "grunt watch",
-    "start": "npm-run-all -p watch-less start-js"
+    "start-dev": "npm-run-all -p watch-less start-js",
+    "start":"node server.js",
+    "main":"server.js"
   }
 }
