@@ -4,8 +4,9 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const massive = require('massive');
 const logger = require('morgan');
-const server_config = require('./server/server.config') || process.env;
+const server_config = require('./server/server.config');
 const controller = require('./server/controller');
+const prod = process.env.config;
 
 
 //Initalizes express
@@ -37,8 +38,8 @@ massive({
     host:'localhost',
     port:5435,
     database:'postgres',
-    user:server_config.user,
-    password:server_config.password
+    user:prod.user,
+    password:prod.password
 }).then(db => app.set('db',db));
 
 /* Refer to all endpoints below */
