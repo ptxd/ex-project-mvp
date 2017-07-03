@@ -47,9 +47,9 @@ massive({
 //---End points to serve the front end--- 
 //very important!!! for production add app.get('/*',()=>{}); the star is important 
 
-// app.get('/*', function (req, res) {
-//    res.sendFile(path.join(__dirname, 'build', 'index.html'));
-//  });
+app.get('/*', function (req, res) {
+   res.sendFile(path.join(__dirname, 'build', 'index.html'));
+ });
 
 //---End points to serve the back end--- 
 
