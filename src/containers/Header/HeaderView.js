@@ -26,7 +26,7 @@ const Header = ({ authService, history, isAuthenticated, profile, error, loginRe
                       <Link to='/about' className="well-text">How It Works</Link>
                   </li>
                   <li className="well">
-                     <Link to='/about' className="well-text">Discover</Link>
+                     <Link to='/product' className="well-text">Product</Link>
                   </li>
                   <li className="well">
                       <Link to='/about' className="well-text">Contact Us</Link>

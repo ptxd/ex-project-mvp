@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {Grid,Col,Row,Panel} from 'react-bootstrap';
 
 class Product extends Component {
     constructor(props){
@@ -8,16 +7,25 @@ class Product extends Component {
 
   productList(product){
     console.log(product);
-    const title = product.title;
-    const content = product.content;
 
-    return(
-        <div className="product-list-container">
-            {title}
-            <br/>
-            {content}
-        </div>
-        );
+    const A = [product.a1,product.a2,product.a3,product.a4];
+    const B = [product.b1,product.b2,product.b3,product.b4];
+    const C = [product.c1,product.c2,product.c3,product.c4];
+    const D = [product.d1,product.d2,product.d3,product.d4];
+    const E = product.e1;
+    const F = product.f1
+    console.log(F);
+    var z = [A,B,C,D,E,F].map((e)=>
+      <div className="product-list-container">
+        {e[0]}<br/>
+        {e[1]}<br/>
+        {e[2]}<br/>
+        {e[3]}<br/>
+        {e[4]}<br/>
+      </div>
+      );
+
+    return(z);
   }
 
   render() {

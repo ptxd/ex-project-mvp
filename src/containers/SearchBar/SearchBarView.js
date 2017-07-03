@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {Button} from 'react-bootstrap';
 
 class SearchBar extends Component {
     constructor(props){

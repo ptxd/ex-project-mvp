@@ -13,7 +13,7 @@ import './css/main.css';
 
 
 const store = configureStore()
-persistStore(store);
+persistStore(store).purge();
 
 ReactDOM.render(
   <Provider store={store}>
