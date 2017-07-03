@@ -20,9 +20,8 @@ const data = [
 class SimpleRadialBarChart extends Component{
 	render () {
   	return (
-    	<RadialBarChart width={500} height={300} cx={150} cy={150} innerRadius={20} outerRadius={140} barSize={10} data={data}>
+    	<RadialBarChart width={800} height={400} cx={150} cy={150} innerRadius={20} outerRadius={165} barSize={10} data={data}>
         <RadialBar minAngle={15} label background clockWise={true} dataKey='uv'/>
-        <Legend iconSize={10} width={120} height={140} layout='vertical' verticalAlign='middle' wrapperStyle={style}/>
         </RadialBarChart>
     );
   }

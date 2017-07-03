@@ -28,7 +28,7 @@ class SimplePieChart extends Component{
             cy={200} 
             labelLine={false}
             label={renderCustomizedLabel}
-            outerRadius={80} 
+            outerRadius={200} 
             fill="#8884d8"
             >
                 {

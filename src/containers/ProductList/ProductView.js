@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component,createElement } from 'react';
 import SimplePieChart from '../../components/PieChart';
 import SimpleTreemap from '../../components/Treemap';
 import SimpleRadialBarChart from '../../components/RadialChart';
@@ -12,13 +12,17 @@ class Product extends Component {
 
   productList(product){
     console.log(product);
+    var q = <SimplePieChart/>;
+    var k =<SimpleTreemap />;
+    var s = <SimpleRadialBarChart />;
+    var t = <TwoLevelPieChart />;
 
-    const A = [product.a1,product.a2,product.a3,product.a4];
-    const B = [product.b1,product.b2,product.b3,product.b4];
-    const C = [product.c1,product.c2,product.c3,product.c4];
-    const D = [product.d1,product.d2,product.d3,product.d4];
-    const E = product.e1;
-    const F = product.f1
+    const A = [product.a1,product.a2,product.a3];
+    const B = [k];
+    const C = [s];
+    const D = [t];
+    const E = [q];
+    const F = ['unknown data structure var k=<div/>'];
     console.log(F);
     var z = [A,B,C,D,E,F].map((e)=>
       <div className="product-list-container">
@@ -26,11 +30,8 @@ class Product extends Component {
         {e[1]}<br/>
         {e[2]}<br/>
         {e[3]}<br/>
-        {e[4]}<br/>
-        <TwoLevelPieChart/>
       </div>
       );
-
     return(z);
   }
 
