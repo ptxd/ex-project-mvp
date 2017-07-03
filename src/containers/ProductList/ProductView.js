@@ -1,4 +1,9 @@
 import React, { Component } from 'react';
+import SimplePieChart from '../../components/PieChart';
+import SimpleTreemap from '../../components/Treemap';
+import SimpleRadialBarChart from '../../components/RadialChart';
+import TwoLevelPieChart from '../../components/RadarChart';
+
 
 class Product extends Component {
     constructor(props){
@@ -22,6 +27,7 @@ class Product extends Component {
         {e[2]}<br/>
         {e[3]}<br/>
         {e[4]}<br/>
+        <TwoLevelPieChart/>
       </div>
       );
 
