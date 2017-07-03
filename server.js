@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const massive = require('massive');
 const logger = require('morgan');
-const server_config = require('./server/server.config');
+// const server_config = require('./server/server.config');
 const controller = require('./server/controller');
 const prod = process.env;
 
