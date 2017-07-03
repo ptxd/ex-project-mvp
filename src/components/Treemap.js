@@ -138,7 +138,7 @@ class SimpleTreemap extends Component{
 	render () {
   	return (
     	<Treemap
-      	width={800}
+      	width={750}
         height={400}
         data={data}
         dataKey="size"
