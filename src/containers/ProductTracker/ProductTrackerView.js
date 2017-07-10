@@ -23,7 +23,7 @@ class ProductTracker extends Component {
                 <td>{price}</td>
                 <td>
                     <Link to={`/product?q=${ticker}`} >
-                        <button value={ticker} onClick={(e)=>this.handleClick(e)} className="btn btn-success"> 
+                        <button value={ticker} onClick={(e)=>this.handleClick(e)} className="btn btn-info"> 
                             test 
                         </button>
                     </Link>
@@ -34,7 +34,7 @@ class ProductTracker extends Component {
 
     render() {
         return (
-            <div>
+
                 <table className="table table-hover">
                     <thead>
                         <tr>
@@ -48,7 +48,7 @@ class ProductTracker extends Component {
                         {this.props.tracker.map(this.renderTracker)}
                     </tbody>    
                 </table>
-            </div>
+
         );
     }
 }

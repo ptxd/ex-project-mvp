@@ -21,8 +21,7 @@ class SearchBar extends Component {
 
     render() {
         return (
-            <div className="search-container">
-                <div className="input-container">
+  
                     <form className = "input-group" onSubmit={this.onFormSubmit}>
                         <input 
                             placeholder="...Type Product"
@@ -31,11 +30,10 @@ class SearchBar extends Component {
                             onChange={this.onInputChange}
                         />
                         <span className="input-group-button">
-                            <button type="submit" className="btn btn-info">Add</button>
+                            <button type="submit" className="btn btn-success btn-tracker">Add</button>
                         </span>
                     </form>
-                </div>
-            </div>
+
         );
     }
 }

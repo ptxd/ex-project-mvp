@@ -21,9 +21,12 @@ class Dashboard extends Component {
               <div className="recharts-right">    
                 <MultipleAreaCharts />
               </div>  
-              </span>           
+              </span>          
           </div> 
-
+          <div className="tracker-wrapper">
+              <SearchBarContainer /> 
+              <ProductTrackerContainer />
+          </div> 
         </div>
       </div>
     );
@@ -36,9 +39,5 @@ export default Dashboard;
   //  <div className="dash-trend-container">
   //         <TableList></TableList>
   //         </div>
-          //   <div className="dash-search">       
-          //   <SearchBarContainer />
-          // </div>
-          // <div className="dash-table">
-          //   <ProductTrackerContainer />
-          // </div> 
+          
+        
