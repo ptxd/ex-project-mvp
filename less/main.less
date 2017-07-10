@@ -26,7 +26,7 @@ header{
     z-index: 10;
     width: 100%;
     height: 60px;;
-    background-color: rgba(48,0,0, 0.15);
+    background-color: rgba(48,0,0, 1.0);
 }
 
 /*Hamburger Menu*/
@@ -659,62 +659,35 @@ p a {
 
 /*Start of Product page*/
 .product-main{
-	background-image:url('../Images/black-background_00313351.jpg');
+	margin: 0;
+	background:radial-gradient(farthest-corner at 95% 10%, #94525A, #181528) repeat;
 	width:100%;
-	height:1800px;
+	min-height:100rem;
 	z-index: 0;
+	background-repeat:repeat-y;
+	padding-right:0px;
+	padding-left:15px; 
+	padding-top:10px;
 }
 
 .product-container{
-	width:100%;
-	height: 1200px;
-	z-index:5;
-	position: relative;
-	padding-top:80px;
-	padding-left:80px;
-	padding-right:80px;
+//   background:  #252830;
+  background:  #2a2c2e;
+//   background-color:rgba(52,55,56,0.75);
+  margin-top:65px;
+  margin-left:130px;
+  box-shadow: 0 5px 20px #000;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  box-sizing: border-box;
+  border: 0.5px solid #000;
+  width:90%;
+  height:90rem;
+  position:relative;
 }
 
-.product-container-div {
-	height:inherit;
-	width:100%;
-	// margin-left:60px;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: flex-start;
-	align-content: space-around;
+.container{
+	width:inherit;
 }
-
-.product-list-container{
-	background-color: rgba(255,255,255, 0.15);
-	color:white;
-	width:600px;
-	height:350px;
-}
-
-.comment-list-container{
-	background-color: rgba(255,255,255, 0.15);
-	color:white;
-	width:60%;
-	height:350px;
-	margin-top:100px;
-	margin-left: 350px;
-}
-
-.recharts-surface{
-	padding-bottom: 150px;
-	margin-bottom: 150px;
-	padding-right: 150px;
-	
-}
-
-g .recharts-layer .recharts-radial-bar-background{
-	padding-top:50px !important;
-	padding-left:200px !important;
-}
-
-
 
 /*End of Product page*/

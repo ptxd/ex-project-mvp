@@ -1,45 +1,37 @@
-import React, { Component,createElement } from 'react';
-import SimplePieChart from '../../components/PieChart';
-import SimpleTreemap from '../../components/Treemap';
-import SimpleRadialBarChart from '../../components/RadialChart';
-import TwoLevelPieChart from '../../components/RadarChart';
+import React, { Component} from 'react';
+import ProductHead from '../../components/product_head/product_head';
+import TokenStats from '../../components/token_stats/token_stats';
+import General from '../../components/general/general';
+import Technical from '../../components/technical/technical';
+import Links from '../../components/links/links'
+import {Grid,Row,Col} from 'react-bootstrap';
 
 
 class Product extends Component {
-    constructor(props){
-    super(props);
-  }
-
-  productList(product){
-    console.log(product);
-    var q = <SimplePieChart/>;
-    var k =<SimpleTreemap />;
-    var s = <SimpleRadialBarChart />;
-    var t = <TwoLevelPieChart />;
-
-    const A = [product.a1,product.a2,product.a3];
-    const B = [k];
-    const C = [s];
-    const D = [t];
-    const E = [q];
-    const F = ['unknown data structure var k=<div/>'];
-    console.log(F);
-    var z = [A,B,C,D,E,F].map((e)=>
-      <div className="product-list-container">
-        {e[0]}<br/>
-        {e[1]}<br/>
-        {e[2]}<br/>
-        {e[3]}<br/>
-      </div>
-      );
-    return(z);
-  }
 
   render() {
     return (
-      <div className="product-container-div">
-              {this.props.product.map((e)=>e.map(this.productList))}
-      </div>
+      <Grid>
+        <Row>
+          <Col xs={6} md={3}>
+            <ProductHead></ProductHead>
+          </Col>
+          <Col xs={12} md={8}>
+            <TokenStats></TokenStats>
+          </Col>
+          </Row>
+          <Row>
+          <Col xs={6} md={4}>
+            <General></General>
+          </Col>
+          <Col xs={6} md={4}>
+            <Technical></Technical>
+          </Col>
+          <Col xs={6} md={4}>
+            <Links></Links>
+          </Col>
+          </Row>
+      </Grid>
     );
   }
 }

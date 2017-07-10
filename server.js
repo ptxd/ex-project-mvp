@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const massive = require('massive');
 const logger = require('morgan');
-// const server_config = require('./server/server.config');
+const server_config = require('./server/server.config');
 const controller = require('./server/controller');
 const prod = process.env;
 
@@ -29,16 +29,16 @@ app.use(function(req, res, next) {
 // Log requests to the console.
 app.use(logger(':remote-addr - :remote-user [:date[clf]] ":method :url HTTP/:http-version" :status :res[content-length] :response-time ms'));
 
-//serves the build directory
-app.use(express.static(path.join(__dirname, 'build')));
+// //serves the build directory
+// app.use(express.static(path.join(__dirname, 'build')));
 
 //Massive connect initializer to postgressql
 massive({
     host:'localhost',
     port:5435,
     database:'postgres',
-    user:prod.user,
-    password:prod.password
+    user:server_config.user,
+    password:server_config.password
 }).then(db => app.set('db',db));
 
 /* Refer to all endpoints below */
@@ -46,9 +46,9 @@ massive({
 //---End points to serve the front end--- 
 //very important!!! for production add app.get('/*',()=>{}); the star is important 
 
-app.get('/*', function (req, res) {
-   res.sendFile(path.join(__dirname, 'build', 'index.html'));
- });
+// app.get('/*', function (req, res) {
+//    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+//  });
 
 //---End points to serve the back end--- 
 

@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Cormorant');
+
+.general-wrapper{
+    display: inline-block;
+    width:50rem;
+    height:40rem;
+    background:  #252830;
+    /*background-color:rgba(52,55,56,1.0);*/
+    box-shadow: 0 2px 20px #000;
+    margin-top:5rem;
+}
+
+.general-name{
+    width:inherit;
+    line-height: 5rem;
+    padding-left:1rem;
+    font-size: 20px;
+    color:white;
+    font-family: 'Cormorant', serif;
+    background:  #252830;
+    /*background-color:#303334;*/
+    text-align: left;
+    margin-bottom:0px;
+}
+
+.general-line{
+    margin-top:0px !important;
+    background-color:#1c8ed7;
+    height: 2px; 
+    border: 0;
+}
