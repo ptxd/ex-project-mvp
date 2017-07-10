@@ -2,10 +2,16 @@
 
 .thumbnail-div{
     display: inline-block;
-    width:100rem;
+    width:111rem;
     height:25rem;
-    background:  #252830;
-    /*background-color:rgba(52,55,56,1.0);*/
+      background: repeating-linear-gradient(
+		45deg,
+		rgba(37, 40, 48, 0.3),
+		rgba(60, 59, 58, 0.5) 0.5px,
+		rgba(60, 59, 58, 0.5) 0.5px,
+		rgba(60, 59, 58, 0.5) 0.5px
+		);
+
     box-shadow: 0 2px 20px #000;
     margin-left:3rem;
     margin-top:5rem;

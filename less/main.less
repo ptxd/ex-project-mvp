@@ -24,9 +24,10 @@ body {
 header{
     position: fixed;
     z-index: 10;
-    width: 100%;
+    width: 98.9%;
     height: 60px;;
-    background-color: rgba(48,0,0, 1.0);
+    background-color:  rgba(60, 59, 58, 0.5);
+	border: 0.5px solid #424242;
 }
 
 /*Hamburger Menu*/
@@ -660,7 +661,8 @@ p a {
 /*Start of Product page*/
 .product-main{
 	margin: 0;
-	background:radial-gradient(farthest-corner at 95% 10%, #94525A, #181528) repeat;
+	// background:radial-gradient(farthest-corner at 95% 10%, #94525A, #181528) repeat;
+	background-image:url('../Images/black-background_00313351.jpg');
 	width:100%;
 	min-height:100rem;
 	z-index: 0;
@@ -680,15 +682,22 @@ p a {
 .product-container{
 //   background:  #252830;
   background:  #2a2c2e;
+  background: repeating-linear-gradient(
+		45deg,
+		rgba(37, 40, 48, 0.3),
+		rgba(60, 59, 58, 0.5) 0.5px,
+		rgba(60, 59, 58, 0.5) 0.5px,
+		rgba(60, 59, 58, 0.5) 0.5px
+		);
 //   background-color:rgba(52,55,56,0.75);
-  margin-top:50px;
+  margin-top:60px;
   margin-left:10px;
   box-shadow: 0 5px 20px #000;
   background-repeat: no-repeat;
   background-clip: content-box;
   box-sizing: border-box;
-//   border: 0.5px solid #7CFC00;
-  width:87%;
+  border: 0.5px solid #424242;
+  width:88%;
   height:91.5rem;
   z-index:1;
   
@@ -700,13 +709,20 @@ p a {
 
 .sidebar-wrapper{
 	box-sizing: border-box;
-	border: 0.5px solid orangered;
+	border: 0.5px solid #424242;
 	background:  #2a2c2e;
 	width:21rem;
   	height:91.5rem;
 	z-index:2;
 	margin-left:-1.5rem;
-	margin-top:50px;
+	margin-top:60px;
+	background: repeating-linear-gradient(
+		45deg,
+		rgba(37, 40, 48, 0.3),
+		rgba(60, 59, 58, 0.5) 0.5px,
+		rgba(60, 59, 58, 0.5) 0.5px,
+		rgba(60, 59, 58, 0.5) 0.5px
+		);
 }
 
 /*End of Product page*/
