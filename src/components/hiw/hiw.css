@@ -1,0 +1,16 @@
+.item {
+  box-sizing: border-box;
+  width:400px;
+  height:400px;
+  margin: 50px auto;
+  padding-top: 75px;
+  background: #ccc;
+  text-align: center;
+  color: #FFF;
+  font-size: 3em;
+}
+
+/*    color: #00acd7;
+    color: #ff6600;
+        color: #3fae29;
+*/

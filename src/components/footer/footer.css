@@ -1,0 +1,21 @@
+.footer {
+    text-align: center;
+}
+
+.footer >p{
+    margin-top:3em;
+    font-size:12px;
+    padding:-10px;
+    margin-bottom:1rem;
+}
+
+.footer>a{
+    color:white;
+    text-decoration: none;
+}
+
+.fa{
+    color:white;
+    margin:0;
+    padding:15px;
+}
