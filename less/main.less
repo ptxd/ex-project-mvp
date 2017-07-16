@@ -9,6 +9,7 @@
 
 // Add your own styles here
 @import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Cutive+Mono');
 
 html {  
     height: 100%;
@@ -151,91 +152,25 @@ header{
 /*End of header styling*/
 
 /*Start of Page 1*/
-.main-image{
-    position: absolute;
-    z-index: 0;
-    background-size: 100% 100%;
-    top: 0px;
-    left: 0px; /* fixed to left. Replace it by right if you want.*/
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    // background-image: url('../Images/form_green_shadow_dark_85047_1920x1080.jpg');
-    // background-size: cover;
-    // background-repeat: no-repeat;
-	// color: #fff;
-	// background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-	// background-size: 400% 400%;
-	// -webkit-animation: Gradient 10s ease infinite;
-	// -moz-animation: Gradient 10s ease infinite;
-	// animation: Gradient 10s ease infinite;
-}
-
-// @-webkit-keyframes Gradient {
-// 	0% {
-// 		background-position: 0% 50%
-// 	}
-// 	50% {
-// 		background-position: 100% 50%
-// 	}
-// 	100% {
-// 		background-position: 0% 50%
-// 	}
-// }
-
-// @-moz-keyframes Gradient {
-// 	0% {
-// 		background-position: 0% 50%
-// 	}
-// 	50% {
-// 		background-position: 100% 50%
-// 	}
-// 	100% {
-// 		background-position: 0% 50%
-// 	}
-// }
-
-// @keyframes Gradient {
-// 	0% {
-// 		background-position: 0% 50%
-// 	}
-// 	50% {
-// 		background-position: 100% 50%
-// 	}
-// 	100% {
-// 		background-position: 0% 50%
-// 	}
-// }
-
-/*Use this with the main body just in  case for text
-h1,
-h6 {
-	font-family: 'Open Sans';
-	font-weight: 300;
-	text-align: center;
-	position: absolute;
-	top: 45%;
-	right: 0;
-	left: 0;
-}
-*/
 
 .mainbody-div{
-    position:relative;
+	position:relative;
     z-index:1;
-    height:100vh; 
+	height:110rem;
+	width:100%; 
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    align-content: stretch;
+	align-content: stretch;
+	background-image: url('../Images/blue-orb-15381.jpg');
 }
 
 .banner-btn{
     z-index:5;
-    margin-top:300px;
+	margin-top:50rem;
+	margin-left:2rem;
     position: relative;
     display: flex;
     align-items: stretch;
@@ -267,6 +202,22 @@ h6 {
     line-height: 350%;
     text-align: center;
 }
+
+.about-us{
+	width:100%;
+	height:60rem;
+	background-color: #262626;
+	// background-color: rgba(37, 40, 48, 1.0);
+	padding-top:5rem;
+}
+
+.about-text{
+	font-size: 50px;
+	font-family: 'Cutive Mono', monospace;
+	display:block;
+	color:white;
+}
+
 /*End of Page1 */
 
 /*Dashboard Page*/

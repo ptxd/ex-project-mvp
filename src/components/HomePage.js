@@ -1,22 +1,22 @@
 
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
-import video from '../video/background.mp4'
+import About from './about/about';
 
 class HomePage extends Component {
-
     render() {
         return (    
             <div>
-                <video className='main-image' autoPlay loop muted>
-                    <source src={video} type='video/mp4'/>
-                </video>
-                <div className="mainbody-div">
-                    <Link to='/about'>
+                <div className="mainbody-div">   
                         <button className="banner-btn">
-                            <span>Learn More</span>
+                            <Link to='/about'>
+                                <span>Learn More</span>
+                            </Link>
                         </button>
-                    </Link>
+                    </div>
+                <div className="about-us">
+                    <div><p className="about-text">How It Works</p></div>
+                    <About/>
                 </div>   
             </div>
         );
@@ -24,3 +24,6 @@ class HomePage extends Component {
 }
 
 export default HomePage;
+
+
+              
