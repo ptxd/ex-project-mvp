@@ -27,8 +27,8 @@ header{
     z-index: 10;
     width: 100%;
     height: 60px;;
-    background-color:  rgba(60, 59, 58, 0.5);
-	border: 0.5px solid #424242;
+    background-color:  rgba(60, 59, 58, 0);
+// 	border: 0.5px solid #424242;
 }
 
 /*Hamburger Menu*/
@@ -164,12 +164,24 @@ header{
     justify-content: center;
     align-items: center;
 	align-content: stretch;
-	background-image: url('../Images/blue-orb-15381.jpg');
+	// background-image: url('../Images/blue-orb-15381.jpg');
+	background-image: url('https://unsplash.it/1800/800?image=893');
+	background-repeat: no-repeat;
+	background-size: cover;
+	filter: brightness(90%);
+}
+
+.exstral p{
+	margin-top:15rem;
+	font-size:80px !important;
+	font-family: 'Cutive Mono', monospace !important;
+	color:white !important;
+	z-index:30;
 }
 
 .banner-btn{
     z-index:5;
-	margin-top:50rem;
+	margin-top:20rem;
 	margin-left:2rem;
     position: relative;
     display: flex;
@@ -217,6 +229,55 @@ header{
 	display:block;
 	color:white;
 }
+
+.hiw-div{
+	width:100%;
+	height:60rem;
+	background-color: #eeebe5;
+}
+
+.hiw-text{
+	font-size: 50px;
+	font-family: 'Cutive Mono', monospace;
+	display:block;
+	color:#0099ff;
+	padding-top:5rem;
+}
+
+.tracking-in-expand {
+	-webkit-animation: tracking-in-expand 2.0s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand 2.0s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+/**
+ * ----------------------------------------
+ * animation tracking-in-expand
+ * ----------------------------------------
+ */
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 
 /*End of Page1 */
 
