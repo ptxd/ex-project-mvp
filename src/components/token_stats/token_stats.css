@@ -2,7 +2,7 @@
 
 .thumbnail-div{
     display: inline-block;
-    width:112rem;
+    width:75rem;
     height:25rem;
       background: repeating-linear-gradient(
 		45deg,
@@ -13,7 +13,7 @@
 		);
 
     box-shadow: 0 2px 20px #000;
-    margin-left:3rem;
+    margin-left:-2rem;
     margin-top:5rem;
 }
 
@@ -63,10 +63,13 @@
 }
 
 .thumbnail-font{
+    width:inherit;
+    /* line-height: 5rem; */
+    padding-left:1rem;
     font-size: 20px;
-    line-height: 12px;
-    margin:auto 15px;
+    color:white;
     font-family: 'Cormorant', serif;
+    letter-spacing: 5px;
 }
 
 pre {
@@ -81,15 +84,16 @@ pre {
 
 .thumb-text{
     font-family: 'Cormorant', serif;
-    line-height: 12px;
+    line-height: 5rem;
     color: #fff;
     text-align: center;
-    margin-top:1rem;
+    /* margin-top:1rem; */
 }
 
 .thumbnail_line{
     margin-top:0px !important;
-    background-color:#ed4949;
+    /* background-color:#ed4949; */
+    background-color:#FED42A;   
     height: 2px; 
     border: 0;
 }
