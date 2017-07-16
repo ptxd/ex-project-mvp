@@ -2,6 +2,8 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import About from './about/about';
+import Hiw from './hiw/hiw';
+import Footer from './footer/footer'
 
 class HomePage extends Component {
     render() {
@@ -23,7 +25,12 @@ class HomePage extends Component {
                 </div>
                 <div className="hiw-div">
                     <div><p className="hiw-text">HOW IT WORKS</p></div>
-                    <div></div>
+                    <div>
+                        <Hiw></Hiw>
+                    </div>
+                </div>
+                <div className="footer-container">
+                   <Footer/>
                 </div>   
             </div>
         );

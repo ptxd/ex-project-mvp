@@ -20,11 +20,11 @@ const Header = ({ authService, history, isAuthenticated, profile, error, loginRe
                       <Link to='/' className="well-text">Home</Link>
                   </li>   
                   <li className="well">
-                      <Link to='/dashboard' className="well-text">Dashboard</Link>
-                  </li>   
-                  <li className="well">
                       <Link to='/about' className="well-text">How It Works</Link>
                   </li>
+                  <li className="well">
+                      <Link to='/dashboard' className="well-text">Dashboard</Link>
+                  </li>   
                   <li className="well">
                      <Link to='/product' className="well-text">Product</Link>
                   </li>
