@@ -53,7 +53,7 @@ const Header = ({ authService, history, isAuthenticated, profile, error, loginRe
                                     <Link to='/dashboard' className="well-text">Dashboard</Link>
                                 </li>   
                                 <li className="well">
-                                    <Link to='/product' className="well-text">Contact Us</Link>
+                                    <Link to='/product' className="well-text">Product</Link>
                                 </li>
                                 <li className="well">
                                     <Link to='/about' className="well-text">Technology</Link>

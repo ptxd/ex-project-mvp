@@ -6,7 +6,7 @@ class TokenStats extends Component {
     render() {
         return (
             <div className="thumbnail-div">
-                <pre> <span className="thumbnail-font">Token Stats </span></pre>
+                <pre className="thumbnail-font">TOKEN STATS </pre>
                 <hr className="thumbnail_line"></hr>
                 <div  className="thumbnail-wrapper">
                     <div className="thumbnail-container green">

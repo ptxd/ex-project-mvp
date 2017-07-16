@@ -18,8 +18,8 @@ class Hiw extends Component{
             <div>
                 <div>
                     <div className="item" data-aos="zoom-out-right">1</div>
-                            <div className="item" data-aos="zoom-out-left">2</div>
-                    </div>
+                    <div className="item" data-aos="zoom-out-left">2</div>
+                </div>
                 <div>
                     <div className="item" data-aos="zoom-out-right">3</div>
                     <div className="item" data-aos="zoom-out-left">4</div>
