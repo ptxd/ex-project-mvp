@@ -1,15 +1,70 @@
 .item {
   box-sizing: border-box;
-  width:400px;
-  height:400px;
+  width:720px;
+  height:300px;
   margin: 50px auto;
-  padding-top: 75px;
+  padding-top: 0px;
   background: #ccc;
   text-align: center;
   color: #FFF;
   font-size: 3em;
 }
 
+.hiw-div-left{
+  float:left;
+  height:300px;
+  width:250px;
+  
+}
+
+.hiw-div-right{
+  float:right;
+  width:450px;
+  height:inherit;
+  text-align: justify;
+}
+
+.hiw-div2-left{
+  float:left;
+  height:300px;
+  width:500px;
+
+}
+
+.hiw-div2-right{
+  float:right;
+  width:220px;
+  height:inherit;
+  text-align: justify;
+}
+.hiw-div3-left{
+  float:left;
+  height:300px;
+  width:300px;
+
+}
+
+.hiw-div3-right{
+  float:right;
+  width:420px;
+  height:inherit;
+  text-align: justify;
+}
+
+
+.hiw-div4-left{
+  float:left;
+  height:300px;
+  width:500px;
+
+}
+
+.hiw-div4-right{
+  float:right;
+  width:220px;
+  height:inherit;
+  text-align: justify;
+}
 /*    color: #00acd7;
     color: #ff6600;
         color: #3fae29;

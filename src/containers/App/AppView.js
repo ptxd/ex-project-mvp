@@ -35,7 +35,7 @@ class App extends Component {
       return this.props.history.push({ pathname: '/' })
       })
     }
-
+    
   render() {
     return(
       <div>

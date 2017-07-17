@@ -5,7 +5,7 @@ class Technical extends Component {
     render() {
         return (
             <div className="technical-wrapper">
-                <p className="technical-name">Technicals</p>
+                <p className="technical-name">The Tech</p>
                 <hr className="technical-line"></hr>  
             </div>
         );
