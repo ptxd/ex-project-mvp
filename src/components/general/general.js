@@ -5,7 +5,7 @@ class General extends Component {
     render() {
         return (
             <div className="general-wrapper">
-                <p className="general-name">Fundamentals</p>
+                <p className="general-name">The Business</p>
                 <hr className="general-line"></hr>  
             </div>
         );

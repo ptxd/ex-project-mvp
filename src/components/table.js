@@ -80,24 +80,7 @@ class TableList extends Component {
                             <td>1</td>
                             <td>Jul-30</td>
                         </tr>
-                        <tr>
-                            <td>Rialto.ai</td>
-                            <td>2</td>
-                            <td>tbd</td>
-                            <td>Jul-15</td>
-                        </tr>
-                        <tr>
-                            <td>Dent</td>
-                            <td>2</td>
-                            <td>tbd</td>
-                            <td>Jul-12</td>
-                        </tr>
-                        <tr>
-                            <td>Starta</td>
-                            <td>2</td>
-                            <td>tbd</td>
-                            <td>Jul-4</td>
-                        </tr>
+                   
                     </tbody>   
                 </div>
             </div>    
@@ -142,5 +125,23 @@ export default TableList;
                         //     <td>2</td>
                         //     <td>3</td>
                         //     <td>4</td>
+                        // </tr>
+                        //      <tr>
+                        //     <td>Rialto.ai</td>
+                        //     <td>2</td>
+                        //     <td>tbd</td>
+                        //     <td>Jul-15</td>
+                        // </tr>
+                        // <tr>
+                        //     <td>Dent</td>
+                        //     <td>2</td>
+                        //     <td>tbd</td>
+                        //     <td>Jul-12</td>
+                        // </tr>
+                        // <tr>
+                        //     <td>Starta</td>
+                        //     <td>2</td>
+                        //     <td>tbd</td>
+                        //     <td>Jul-4</td>
                         // </tr>
                       

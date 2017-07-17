@@ -27,8 +27,11 @@ class Dashboard extends Component {
           <div className="tracker-wrapper">
               <SearchBarContainer /> 
               <ProductTrackerContainer />
-          </div> 
-        </div>
+          </div>
+          <div className="table-list">
+            <TableList/>
+          </div>
+          </div>
       </div>
     );
   }
