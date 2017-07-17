@@ -1,0 +1,70 @@
+.sp-container{
+    width:20rem;
+    height:5rem;
+    padding-top:5.0rem;
+    padding-left:2.5rem;
+}
+.sp-text{
+     text-align: left;
+     color:white;
+     padding-top:3.5rem;
+     line-height:6px;
+     font-size: 12px;
+   
+}
+
+.tag {
+  width:15rem;
+  background: #eee;
+  border-radius: 3px 0 0 3px;
+  color: #999;
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 20px 0 23px;
+  position: relative;
+  margin: 0 10px 10px 0;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.tag::before {
+  background:rgba(40,41,44,0.8);
+  border-radius: 10px;
+  box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+  content: '';
+  height: 6px;
+  left: 10px;
+  position: absolute;
+  width: 6px;
+  top: 10px;
+}
+
+.tag::after {
+  background: repeating-linear-gradient(
+		45deg,
+		rgba(37, 40, 48, 0.3),
+		rgba(60, 59, 58, 0.5) 0.5px,
+		rgba(60, 59, 58, 0.5) 0.5px,
+		rgba(60, 59, 58, 0.5) 0.5px
+		);
+  border-bottom: 13px solid transparent;
+  border-left: 10px solid #eee;
+  border-top: 13px solid transparent;
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+
+}
+
+.tag:hover {
+  background-color: crimson;
+  color: white;
+text-decoration: none;
+}
+
+.tag:hover::after {
+   border-left-color: crimson; 
+   text-decoration: none;  
+}

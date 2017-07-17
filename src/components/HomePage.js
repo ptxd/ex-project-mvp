@@ -28,10 +28,7 @@ class HomePage extends Component {
                     <div>
                         <Hiw></Hiw>
                     </div>
-                </div>
-                <div className="footer-container">
-                   <Footer/>
-                </div>   
+                </div>  
             </div>
         );
     }
