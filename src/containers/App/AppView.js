@@ -7,6 +7,7 @@ import AuthService from '../../utils/AuthService';
 import Dashboard from '../../components/DashboardPage';
 import ProductDetail from '../../components/ProductPage'
 import AboutPage from '../../components/AboutPage';
+import Footer from '../../components/footer/footer';
 
 class App extends Component {
 
@@ -45,6 +46,9 @@ class App extends Component {
           <Route path="/dashboard" component={Dashboard} />
           <Route path="/product" component={ProductDetail} />
         </Switch>
+        <div className="footer-container">
+                   <Footer/>
+        </div> 
       </div>
     )
   }

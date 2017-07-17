@@ -43,12 +43,6 @@ class AboutPage extends Component {
                         </ul>
                 </div>
             </div>
-                <div className="footer">
-                    <div className="clearfix">
-                        <div className="connect">
-                    </div>
-                </div>
-            </div>
         </div>
         );
     }

@@ -5,6 +5,7 @@ import ProductTrackerContainer from '../containers/ProductTracker/ProductTracker
 import TableList from './table';
 import SideBar from '../containers/SideBar/SideBarView';
 
+
 class Dashboard extends Component {
   render() {
     return (
