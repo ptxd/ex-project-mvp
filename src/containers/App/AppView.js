@@ -46,9 +46,9 @@ class App extends Component {
           <Route path="/dashboard" component={Dashboard} />
           <Route path="/product" component={ProductDetail} />
         </Switch>
-        <div className="footer-container">
-                   <Footer/>
-        </div> 
+        <div className="footer-container"> 
+          <Footer></Footer>    
+        </div>
       </div>
     )
   }

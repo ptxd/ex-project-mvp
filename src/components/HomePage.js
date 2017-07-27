@@ -3,7 +3,8 @@ import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import About from './about/about';
 import Hiw from './hiw/hiw';
-import Footer from './footer/footer'
+import Moreinfo from './moreinfo/moreinfo';
+
 
 class HomePage extends Component {
     render() {
@@ -28,7 +29,11 @@ class HomePage extends Component {
                     <div>
                         <Hiw></Hiw>
                     </div>
-                </div>  
+                </div>
+                <div className="mi-div">
+                    <p className="mi-head-txt">CURRENT NEWS</p>
+                    <Moreinfo/>
+                </div>
             </div>
         );
     }
